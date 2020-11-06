@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello
-subtitle: My name is Pudhina
+title: Welcome
+subtitle: James Petley
 sitemap:
   priority: 0.9
 ---
@@ -9,6 +9,5 @@ sitemap:
 <img src="{{ '/assets/img/pudhina.jpg' | prepend: site.baseurl }}" id="about-img">
 
 <div id="describe-text">
-	<p>A simple, minimal Jekyll theme for a personal web page and blog, focusing on white space and readability</p>
-	<p>Fork and use the theme from the <strong> <a href="https://github.com/knhash/Pudhina"> repository</a> </strong></p>
-</div>
+	<p>Welcome to my personal website. I am a PhD student studying quasars (highly luminous black hole systems) at Durham University. My supervisor is Dr. Leah Morabito.</p>
+	<p>In my spare time I am involved in a lot of music and Ultimate Frisbee. I am also trying to improve my coding so feel free to check out any projects I post here and give advice.§</a> </strong></p></div>
