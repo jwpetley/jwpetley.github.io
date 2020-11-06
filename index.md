@@ -6,7 +6,7 @@ sitemap:
   priority: 0.9
 ---
 
-<img src="{{ '/assets/img/quasar.png' | prepend: site.baseurl }}" id="quasar-image">
+<center><img src="{{ '/assets/img/quasar.png' | prepend: site.baseurl }}" id="quasar-image"></center>
 
 <div id="describe-text">
 	<p>Welcome to my personal website. I am a PhD student studying quasars (highly luminous black hole systems) at Durham University. My supervisor is Dr. Leah Morabito.</p>
