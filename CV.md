@@ -7,12 +7,12 @@ subtitle: Updated 6/11/20
 <span style="float: right; "><a href="{{ '/assets/Academic_CV.pdf' | prepend: site.baseurl }}"><strong>> Download Academic CV in Full as PDF</strong></a> </span>
 <br>
 
-### SKILLS Are Amaing
+### SKILLS
 ``` Experience in handling large datasets both in the statistical analysis of large catalogues and in processing radio inteferometry data. I am proficient in using Python for data science and am confident in my statistical knowledge and ability to present data in a clear and intuitive fashion. ```  
 
 ### PROJECTS
 **Radio Differences of Broad Absorption Line Quasars** - LOFAR DR2 - Durham University <span style="float: right; ">2020-Present</span>  
-What drives the radio differences between sources with very similar properties across the rest of the spectrum? Broad Absorption Line Quasars show fast moving outflows that are thought to be a prime mode of AGN feedback which can modify the behaviour of a galaxy hosting a supermassive blackhole. However, the two main varieties of BALs show significantly different radio properties that are yet to be explained. Using international LOFAR data I will place these sources more accurately both in an evolutionary timeline and in a cohesive model that can explain them. 
+What drives the radio differences between sources with very similar properties across the rest of the spectrum? Broad Absorption Line Quasars show fast moving outflows that are thought to be a prime mode of AGN feedback which can modify the behaviour of a galaxy hosting a supermassive blackhole. However, the two main varieties of BALs show significantly different radio properties that are yet to be explained. Using international LOFAR data I will place these sources more accurately both in an evolutionary timeline and in a cohesive model that can explain them.
 
 
 
