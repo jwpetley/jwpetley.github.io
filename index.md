@@ -16,14 +16,16 @@ sitemap:
 <p>PS: The image is a toy quasar model</p>
 
 <h1>Latest Post</h1>
-{% for post in site.posts offset:1 limit:1 %}
+{% for post in site.posts limit:1 %}
+<p>
 <li class="post-teaser">
 <a href="{{ post.url | prepend: site.baseurl }}">
 <span class="post-teaser__title">{{ post.title }}</span>
 <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
 </a>
 </li>
-... Show the first post all big ...
+</p>
+
 {% endfor %}
 
 </div>
