@@ -20,8 +20,7 @@ sitemap:
 <p>
 <li class="post-teaser">
 <a href="{{ post.url | prepend: site.baseurl }}">
-<span class="post-teaser__title">{{ post.title }}</span>
-<span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+{{ post.title }} --- {{ post.date | date: "%d %B %Y" }}
 </a>
 </li>
 </p>
