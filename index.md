@@ -15,7 +15,7 @@ sitemap:
 <p>In my spare time I am involved in a lot of music and Ultimate Frisbee. I am also trying to improve my coding so feel free to check out any projects I post here and give advice.</p>
 <p>PS: The image is a toy quasar model</p>
 
-<h1>Latest Post</h1>
+<h1>Latest Blog Post</h1>
 {% for post in site.posts limit:1 %}
 <p>
 <li class="post-teaser">
