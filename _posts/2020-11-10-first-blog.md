@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Welcome"
-subtitle: "A longer explanation of stuff"
+subtitle: "Time to Get Started"
 date:   2020-11-10 21:21:21 +0000
 categories: ["Welcome"]
 ---
