@@ -1,16 +1,16 @@
 ---
 layout: page
-title:  "Sample"
+title:  "Welcome"
 subtitle: "A longer explanation of stuff"
-date:   2016-05-20 21:21:21 +0530
-categories: ["general"]
+date:   2020-11-10 21:21:21 +0000
+categories: ["Welcome"]
 ---
 
-Eos eu docendi tractatos sapientem, brute option menandri in vix, quando vivendo accommodare te ius. Nec melius fastidii constituam id, viderer theophrastus ad sit, hinc semper periculis cum id. Noluisse postulant assentior est in, no choro sadipscing repudiandae vix. Vis in euismod delenit dignissim. Ex quod nostrum sit, suas decore animal id ius, nobis solet detracto quo te.
+This is my first blog here on [jwpetley.github.io](jwpetley.github.io). I hope you enjoy having a look around. I have left a template blog post about Jekyll in the blog in case you are interested in making a similar kind of website.
 
 {% comment %}
 Might you have an include in your theme? Why not try it here!
 {% include my-themes-great-include.html %}
 {% endcomment %}
 
-No laudem altera adolescens has, volumus lucilius eum no. Eam ei nulla audiam efficiantur. Suas affert per no, ei tale nibh sea. Sea ne magna harum, in denique scriptorem sea, cetero alienum tibique ei eos. Labores persequeris referrentur eos ei.
+I hope to update this site with news of my PhD progress, small GitHub projects and anything else that may interest me. I will also look into creating some sort of interface that will allow people to subscribe to updates either through RSS or a mailing list. 
