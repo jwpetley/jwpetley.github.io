@@ -7,7 +7,7 @@ subtitle: Updated 6/11/20
 <span style="float: right; "><a href="{{ '/assets/Academic_CV.pdf' | prepend: site.baseurl }}"><strong>> Download as PDF</strong></a> </span>
 <br>
 
-### SKILLS
+### SKILLS Are Amaing
 ``` Experience in handling large datasets both in the statistical analysis of large catalogues and in processing radio inteferometry data. I am proficient in using Python for data science and am confident in my statistical knowledge and ability to present data in a clear and intuitive fashion. ```  
 
 ### PROJECTS
