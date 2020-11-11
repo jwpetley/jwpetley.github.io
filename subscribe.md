@@ -1,10 +1,8 @@
 ---
 layout: page
 title: Subscribe
-subtitle: Sign Up For Updates
+subtitle: Emails to be sent infrequently!
 ---
-
-# Use the Following Form to Subscribe to Updates
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
