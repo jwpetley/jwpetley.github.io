@@ -3,6 +3,7 @@ layout: page
 title:  "Welcome"
 subtitle: "Time to Get Started"
 date:   2020-11-10 21:21:21 +0000
+comments: true
 categories: ["Welcome"]
 ---
 
