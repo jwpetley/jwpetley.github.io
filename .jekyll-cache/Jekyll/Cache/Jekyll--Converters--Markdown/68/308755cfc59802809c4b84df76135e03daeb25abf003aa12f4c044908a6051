@@ -1,0 +1,48 @@
+I"H<div>
+
+
+<h4 class="post-teaser__month">
+<strong>
+ 
+- - - - -  PhD - - - - - 
+
+</strong>
+</h4>
+<ul class="list-posts">
+
+<li class="post-teaser">
+<a href="/phd/2020/11/11/First-PhD-Blog.html">
+<span class="post-teaser__title">PhD Intro</span>
+<span class="post-teaser__date">11 November 2020</span>
+</a>
+</li>
+
+</ul>
+
+<h4 class="post-teaser__month">
+<strong>
+ 
+- - - - -  Welcome - - - - - 
+
+</strong>
+</h4>
+<ul class="list-posts">
+
+<li class="post-teaser">
+<a href="/welcome/2020/11/10/first-blog.html">
+<span class="post-teaser__title">Welcome</span>
+<span class="post-teaser__date">10 November 2020</span>
+</a>
+</li>
+
+<li class="post-teaser">
+<a href="/welcome/2016/05/20/welcome-to-jekyll.html">
+<span class="post-teaser__title">Jekyll Theme Explanation</span>
+<span class="post-teaser__date">20 May 2016</span>
+</a>
+</li>
+
+</ul>
+
+</div>
+:ET

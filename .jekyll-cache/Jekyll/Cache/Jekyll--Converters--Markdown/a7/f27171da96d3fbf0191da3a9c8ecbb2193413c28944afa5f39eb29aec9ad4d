@@ -1,14 +1,4 @@
----
-layout: page
-title: Welcome
-subtitle: An All Purpose Personal Website
-sitemap:
-  priority: 0.9
----
-
-
-
-<img src="{{ '/assets/img/quasar.jpg' | prepend: site.baseurl }}" id="about-img">
+I"‚<p><img src="/assets/img/quasar.jpg" id="about-img" /></p>
 
 <div id="describe-text">
 	<p>Welcome to my personal website! I am a PhD student studying quasars (highly luminous black hole systems) at Durham University. My supervisor is Dr. Leah Morabito.</p>
@@ -16,15 +6,16 @@ sitemap:
 <p>PS: The image is a toy quasar model</p>
 
 <h1>Latest Blog Post</h1>
-{% for post in site.posts limit:1 %}
+
 <p>
 <li class="post-teaser">
-<a href="{{ post.url | prepend: site.baseurl }}">
-{{ post.title }} --- {{ post.date | date: "%d %B %Y" }}
+<a href="/welcome/2020/11/10/first-blog.html">
+Welcome --- 10 November 2020
 </a>
 </li>
 </p>
 
-{% endfor %}
+
 
 </div>
+:ET
