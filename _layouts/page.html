@@ -3,6 +3,11 @@ layout: default
 ---
 {% include page/title.html %}
 
+{% if page.mathjax %}
+  {% include mathjax.html %}
+{% endif %}
+
+
 {{ content }}
 
 
