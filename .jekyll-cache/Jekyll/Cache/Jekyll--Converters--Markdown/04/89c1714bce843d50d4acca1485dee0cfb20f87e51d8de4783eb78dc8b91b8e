@@ -1,0 +1,52 @@
+I"E<h2 id="intro">Intro</h2>
+
+<p>I recently stumbled across a dataset that was especially interesting to me as a long time FIFA player. If you are not a FIFA enthusiast I hope you are not already switching off! I am certain that you can take something valuable and interesting from this small data exploration.</p>
+
+<p>I will be using a Jupyter Notebook to explore the data and plotly for the plotting which I hope will embed nicely into this static website. ChartStudio is used to store all of the plots in the cloud and can be accessed easily within a notebook.</p>
+
+<h2 id="the-dataset">The Dataset</h2>
+
+<p><a href="https://www.kaggle.com/karangadiya/fifa19">You can download the data set from Kaggle here.</a>. I start by opening up a notebook and importing <code class="language-plaintext highlighter-rouge">Numpy</code> and <code class="language-plaintext highlighter-rouge">Pandas</code> as <code class="language-plaintext highlighter-rouge">np</code> and <code class="language-plaintext highlighter-rouge">pd</code> (what else would you do?). The data is provided as a CSV so I can read it in easily.</p>
+
+<p>If I look at a summary of the data I see that I have 18,207 players with all of their FIFA stats plus some extra information like their Age, the country they represent and even some cool links to pictures of them and their flags.</p>
+
+<p>The first thing I thought to look at was whether player prices correlate well with their overall rating.</p>
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~jwpetley/1.embed"></iframe>
+
+<p>Well that was kind of gross! We can see something is going on but if you look carefully the prices are all strings at pandas has no idea what to do with them. I’ll need to manipulate these strings to convert them to numbers which we can plot much more easily. Here is my approach:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">strings</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s">'Value'</span><span class="p">]:</span>
+    <span class="n">number</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">==</span> <span class="s">'nan'</span><span class="p">:</span> <span class="c1">#Handling the large number without a release clause
+</span>        <span class="n">strings</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">'nan'</span><span class="p">)</span>
+        <span class="n">numbers</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">number</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:]</span> <span class="o">==</span> <span class="s">'K'</span><span class="p">:</span>  <span class="c1"># Check if the last digit is K
+</span>        <span class="n">strings</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">" Thousand"</span><span class="p">)</span>  <span class="c1"># Append a Thousand after removing the last char
+</span>        <span class="n">numbers</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>  <span class="c1"># Remove the last digit with [:-1], and convert to int and multiply by 1000
+</span>    <span class="k">elif</span> <span class="n">number</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:]</span> <span class="o">==</span> <span class="s">'M'</span><span class="p">:</span>  <span class="c1"># Check if the last digit is M
+</span>        <span class="n">strings</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">" Million"</span><span class="p">)</span>  <span class="c1"># Append a Million after removing the last char
+</span>        <span class="n">numbers</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="mi">1000000</span><span class="p">)</span>  <span class="c1"># Remove the last digit with [:-1], and convert to int and multiply by 1000000
+</span>    <span class="k">else</span><span class="p">:</span>  <span class="c1"># just in case data doesnt have an M or K
+</span>        <span class="n">strings</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+        <span class="n">numbers</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="mi">1</span><span class="p">:]))</span></code></pre></figure>
+
+<p>We can then add the numbers data back into the dataframe. Very easily:</p>
+
+<p><code class="language-plaintext highlighter-rouge">data["Value_float"] = numbers</code></p>
+
+<p>Now I’ll improve the plot by adding some extra features.</p>
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~jwpetley/12.embed"></iframe>
+
+<p>That’s a bit nicer! Now we can see the proper trend for price and I have split the colours intro general positions. We see how the maximum value and rating players are mostly forwards (clearly FIFA doesn’t appreciate the art of defence).</p>
+
+<h2 id="world-mapping">World Mapping</h2>
+
+<p>I decided to have a go using the inbuilt chloropleth functionaility within plotly. I decided to colour the countries by their average player rating and here are the results!</p>
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~jwpetley/42.embed"></iframe>
+:ET
