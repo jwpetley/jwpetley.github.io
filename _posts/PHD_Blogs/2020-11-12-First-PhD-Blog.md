@@ -16,4 +16,4 @@ It is now widely accepted that at the centre of most galaxies there lies a black
 
 ![Black Hole Image](/assets/img/blackhole_image.jpg){:class="img-responsive"}
 
-We all imagine black holes as very impressive objects (which they are!) but often they are incredibly small on the scale of a galaxy as a whole. For example the supermassive black hole at the centre of the milky way may be pretty big, $$/sim \(4\times 10^6 M_{\odot} \)$$, but it's nothing compared to the total mass of the Milky Way, \(\sim 1\times 10^12 M_{\odot}\)$$$$.
+We all imagine black holes as very impressive objects (which they are!) but often they are incredibly small on the scale of a galaxy as a whole. For example the supermassive black hole at the centre of the milky way may be pretty big, \\( \sim 4\times 10^6 M_{\odot} \\), but it's nothing compared to the total mass of the Milky Way, \\(\sim 1\times 10^12 M_{\odot}\ \).
