@@ -31,4 +31,4 @@ The key question arising is what interaction between the galaxy and the black ho
 
 I think that most people who have been exposed to at least a little bit of popular science have been told that a black hole is an object that is so dense that not even light can escape its gravitational field. This can give a picture of a sort of cold, motionless kind of object which pulls everything around it inwards until it just disappears. The reality is that this would only be the case if everything surrounding the black hole was stationary to begin with and just fell straight down towards the centre. In the real world things are already moving, generally orbiting, around the black hole.
 
-You may remember some physics from school the formula for the speed of an object in circular motion due to a centripetal force. It looks like this \[ v^2 = \frac{GM}{r} \].
+You may remember some physics from school the formula for the speed of an object in circular motion due to a centripetal force. It looks like this \\[ v^2 = \frac{GM}{r} \\].
