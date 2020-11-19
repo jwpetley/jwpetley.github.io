@@ -39,10 +39,12 @@ Even though black holes themselves are not luminous they are the engines behind 
 
 ##Quasars
 
-A qausar is simply a subset of accreting black hole systemsm, this subset being the most luminous of these systems. What defines the cut from a lower luminosity black hole accretion system, known as an Active Galactic Nucleus (AGN), and a quasar isn't very clear but astonomers usually agree on a luminosity cut when defining different sources.
+A qausar is simply a subset of accreting black hole systemsm, this subset being the most luminous of these systems. What defines the cut from a lower luminosity black hole accretion system, known as an Active Galactic Nucleus (AGN), and a quasar isn't very clear but astonomers usually agree on a luminosity cut when defining different sources. You can click the image below to see a simulation of a quasar. 
+
+[![Quasar Video](http://img.youtube.com/vi/EWd27AS-_yI/0.jpg)](http://www.youtube.com/watch?v=EWd27AS-_yI "Quasar Model")
 
 The origin of the name quasar comes from essentially a lack of knowledge around these sources. Quasar is an abbreviation of _quasi-stellar radio object_. Quasars were first discovered in the 1950s as sources of radio emission. When looked at in the optical they appeared as very faint point like objects and since stars also appear as point like sources the term seemed appropriate. However, astronomers were then able to obtain the redshifts (a measure of distance) for some of these sources. They found that these were some of the most distant objects ever observed. The compactness and distance of these objects combined meant that they must be the most luminous galaxies seen too. We now know that almost all of the emission is coming from a region extremely close to the center of these galaxies which emphasises how amazing these systems are.
 
 In the 60s when work began on understanding these sources, black holes were still considered to be only theoretical and many astronomers did not believe that they were physically realised in our universe. As studies of the systems improved it was found that in fact many quasars are not so luminous at radio frequencies, only 10% are radio loud (more on this in a future blog). Quasars are more easily identified at other wavelengths which makes their original name more outdated. The official term for a quasar is now a quasi-stellar object (QSO); the radio has been dropped! One of the great things about studying quasars is that they have signatures right across the spectrum.
 
-Now you should have a better understanding of what a quasar, matter accreting onto a black hole, I can move to explaining the particular class I am currently studying, Broad Absorption Line Quasars. 
+Now you should have a better understanding of what a quasar, matter accreting onto a black hole, I can move to explaining the particular class I am currently studying, Broad Absorption Line Quasars.
