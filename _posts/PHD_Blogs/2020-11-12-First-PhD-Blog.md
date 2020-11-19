@@ -33,13 +33,16 @@ Well strictly speaking a black hole doesn't emit anything (apart from Hawking ra
 
 ### Accretion
 
+
 Accretion is the process by which material can spiral inwards to an object, in this case a black hole. Accretion processes usually take the form of a disk as this is the best way for a system to conseve angular momentum. Particles in the accretion disk experience friction with other particles which causes them to heat up and radiate away energy. This energy is taken from the kinetic energy and so the particles gradually spiral inwards. Orbital speed increases as the radius reduces which most of you will know from school: \\[ v^2 = \frac{GM}{R} \\]. As the particles get closer and closer to the black hole the temperature rises until x-rays (the highest energy photons) are being emitted very close to the event horizon.
 
 Even though black holes themselves are not luminous they are the engines behind the most luminous objects in our universe. Astronomers have characterised the efficiency of these engines too. This is the ratio of the energy of the radiation emitted accreting material to it's rest mass energy (\\( E = mc^2 \\)). They have found that black holes can range in efficiencies from 10% to 40%.
 
-##Quasars
 
-A qausar is simply a subset of accreting black hole systemsm, this subset being the most luminous of these systems. What defines the cut from a lower luminosity black hole accretion system, known as an Active Galactic Nucleus (AGN), and a quasar isn't very clear but astonomers usually agree on a luminosity cut when defining different sources. You can click the image below to see a simulation of a quasar. 
+## Quasars
+
+
+A qausar is simply a subset of accreting black hole systemsm, this subset being the most luminous of these systems. What defines the cut from a lower luminosity black hole accretion system, known as an Active Galactic Nucleus (AGN), and a quasar isn't very clear but astonomers usually agree on a luminosity cut when defining different sources. You can click the image below to see a simulation of a quasar.
 
 [![Quasar Video](http://img.youtube.com/vi/EWd27AS-_yI/0.jpg)](http://www.youtube.com/watch?v=EWd27AS-_yI "Quasar Model")
 
