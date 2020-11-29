@@ -51,3 +51,7 @@ The origin of the name quasar comes from essentially a lack of knowledge around 
 In the 60s when work began on understanding these sources, black holes were still considered to be only theoretical and many astronomers did not believe that they were physically realised in our universe. As studies of the systems improved it was found that in fact many quasars are not so luminous at radio frequencies, only 10% are radio loud (more on this in a future blog). Quasars are more easily identified at other wavelengths which makes their original name more outdated. The official term for a quasar is now a quasi-stellar object (QSO); the radio has been dropped! One of the great things about studying quasars is that they have signatures right across the spectrum.
 
 Now you should have a better understanding of what a quasar, matter accreting onto a black hole, I can move to explaining the particular class I am currently studying, Broad Absorption Line Quasars.
+
+## Broad Absorption Line Quasars
+
+Most people are familiar with the concept of spectra. 
