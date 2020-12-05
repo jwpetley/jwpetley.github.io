@@ -8,6 +8,10 @@ categories: ["PhD"]
 mathjax: true
 ---
 
+Click the image below for a recent talk I gave introducing my studies to those with an astronomy and radio background. Read on for an intro based at those with no prior experience!
+
+[![Lightning Talk](http://img.youtube.com/vi/-JppRlGagKQ/0.jpg)](http://www.youtube.com/watch?v=-JppRlGagKQ "Recent Talk")
+
 # What is a quasar?
 
 ### Black Holes in Galaxies
@@ -54,4 +58,4 @@ Now you should have a better understanding of what a quasar, matter accreting on
 
 ## Broad Absorption Line Quasars
 
-Most people are familiar with the concept of spectra. 
+Most people are familiar with the concept of spectra, the fact that light can be split into many different wavelengths which together contributed the original signal. Added to this is the concept of emission and absorption lines. These occur when the properties of different atoms either increase the signal compared to the background at certain wavelengths (emission lines) or decrease and block out emission (absorption lines).
