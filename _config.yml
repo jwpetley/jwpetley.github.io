@@ -21,3 +21,5 @@ styles: [agate, androidstudio, arta, asceti, atelier-cave.dark, atelier-cave.lig
 # Build settings
 highlighter: null
 markdown: kramdown
+highlighter: rouge
+    input: GFM
