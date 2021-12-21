@@ -59,3 +59,29 @@ Now you should have a better understanding of what a quasar, matter accreting on
 ## Broad Absorption Line Quasars
 
 Most people are familiar with the concept of spectra, the fact that light can be split into many different wavelengths which together contributed the original signal. Added to this is the concept of emission and absorption lines. These occur when the properties of different atoms either increase the signal compared to the background at certain wavelengths (emission lines) or decrease and block out emission (absorption lines).
+
+Quasars typically show spectra that contain emission lines that have been broadened, as in they show emission at a wider range of wavelengths than the theoretical single emission wavelength for that atom.
+
+![Doppler Broadening](/assets/img/doppler_broadening.jpg){:class="img-responsive"}
+
+The above image indicates how this broadenning, known as Doppler broadenning, can come about. If we have the same emitting gas but at various velocities, relative to the overall velocity of the galaxy we are looking at, then they each have a different wavelength that we observe the emission at. Overall they will combine together to produce a broadened line. The scenarios a), b), c) etc. indicate how this could occur. In the quasar scenario it is usually connected to scenario c) where the gas is orbiting. One half of the gas is moving away with respect to our observations and the other half is moving towards us, resulting in an overall broadened line.
+
+Moving from ***broad emission lines*** to ***broad absorption lines*** is the next step to understanding the BAL appearance. When we observe the spectra of Broad Absorption Line Quasars, with an instrument such as SDSS, we see broad absorption features, next to the broad emission feature for a particular atom, but we find that this absorption is shifted to be at lower wavelengths than the emission line.
+
+![SDSS Telescope](/assets/img/sdss-telescope.jpg.crdownload){:class="img-responsive"}
+
+
+A shift to lower-wavelengths is known as a blue shift, since the blue end of the spectrum is at lower wavelengths, and is another example of ***Doppler shifting***.
+
+The key takeway is that this sort of feature indicates **a fast moving outflow in the line of sight of our telescope.**
+
+## Importance
+
+Now we know how Broad Absorption Line Quasars can be spotted and what this indicates about outflowing gas about black holes, we can ask what the importance or signifcance is of this ouflow to the galaxy as a whole and galaxy formation history overall.
+
+
+![Example BALQSO Spectra](/assets/img/spec_example.png){:class="img-responsive"}
+
+It is thought that there is enough energy in these outflowing winds to significantly effect the rate at which stars are formed in the galaxy hosting the black hole. However, there are many current unknowns that effect this signifcance. These include: how long does the BAL wind last, at what angles does the BAL wind launch, at what distance from the black hole does that BAL wind launch and many more.
+
+In my PhD I hope to understand many more of these outstanding questions by using radio information from the LOFAR telescope to aid me. 
