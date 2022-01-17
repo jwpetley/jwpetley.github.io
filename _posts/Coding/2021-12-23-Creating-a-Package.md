@@ -5,7 +5,7 @@ subtitle: "Simple steps to go from code to a widely installable Python Package"
 date:   2021-12-23 21:21:21 +0000
 comments: true
 categories: ["Coding"]
-mathjax: false
+mathjax: true
 ---
 
 # Package Idea
@@ -133,4 +133,6 @@ The composite handling code is very similar to that of the Download Handling cod
 
 ## Submitting a Project to PyPi
 
-To submit a project on PyPi for the purposes of `pip` installation, one must have a unique project name and a valid setup for the project build within your working directory. 
+To submit a project on PyPi for the purposes of `pip` installation, one must have a unique project name and a valid setup for the project build within your working directory. A version needs to be rolled up into a compressed format called a distribution. With the proper `setup.py` formatting a distribution can be made simply by `python setup.py sdist`. This will save the distribution as `.tgz` files in a new `dist` directory in your root folder. 
+
+The next step is to create and register an account on [pypi.org](pypi.org). This is where the package can be hosted and then distributed. To make this process simple the final upload of the package can be achieved using a package called twine. This can be installed through `pip install tine`. Once happy with your package and the distribution then simply run the command `twine upload dist/*`. It will prompt you for your PyPi username and password at this point. Head to your PyPi account to see your package, now viewable and installable to the whole world!
