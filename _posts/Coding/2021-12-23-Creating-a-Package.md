@@ -123,7 +123,7 @@ class DownloadHandler:
             call(['wget', '--no-check-certificate', '-c',
             '-i', download_file],
             cwd = self.download_folder)
-{& endhighlight %}
+{% endhighlight %}
 
 This example contains only minimal docstrings (small string segments that explain the purpose of a function), and we will return to this issue later.
 
@@ -217,7 +217,7 @@ Download Handler
 
 If you now run `make html` from within the `docs` directory you should be able to make something like this 
 
-![Example Sphinx Output](/_assets/img/documentation_example/png)
+![Example Sphinx Output](/assets/img/documentation_example/png)
 
 In your `index.rst` file you can add the following code so that you can link to this output.
 
