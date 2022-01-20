@@ -129,17 +129,17 @@ This example contains only minimal docstrings (small string segments that explai
 
 ### Composite Handling Code
 
-The composite handling code is very similar to that of the Download Handling code and in fact it incorporates some of the properties of that earlier Class. I think it would be excessive detail to continue to write to this Class hear and instead I should simply point you to the GitHub repository for this project if you would like to learn anymore about this section of the project [https://github.com/jwpetley/CoSpecPy](https://github.com/jwpetley/CoSpecPy).
+The composite handling code is very similar to that of the Download Handling code and in fact it incorporates some of the properties of that earlier Class. I think it would be excessive detail to continue to write about this Class here and instead I should simply point you to the GitHub repository for this project if you would like to learn anymore about this section of the project [https://github.com/jwpetley/CoSpecPy](https://github.com/jwpetley/CoSpecPy).
 
 ## Submitting a Project to PyPi
 
 To submit a project on PyPi for the purposes of `pip` installation, one must have a unique project name and a valid setup for the project build within your working directory. A version needs to be rolled up into a compressed format called a distribution. With the proper `setup.py` formatting a distribution can be made simply by `python setup.py sdist`. This will save the distribution as `.tgz` files in a new `dist` directory in your root folder.
 
-The next step is to create and register an account on [pypi.org](pypi.org). This is where the package can be hosted and then distributed. To make this process simple the final upload of the package can be achieved using a package called twine. This can be installed through `pip install tine`. Once happy with your package and the distribution then simply run the command `twine upload dist/*`. It will prompt you for your PyPi username and password at this point. Head to your PyPi account to see your package, now viewable and installable to the whole world!
+The next step is to create and register an account on [pypi.org](pypi.org). This is where the package can be hosted and then distributed. To make this process simple the final upload of the package can be achieved using a package called twine. This can be installed through ```pip install twine```. Once happy with your package and the distribution then simply run the command ```twine upload dist/*```. It will prompt you for your PyPi username and password at this point. Head to your PyPi account to see your package, now viewable and installable to the whole world!
 
 ## Documentation - Sphinx
 
-In a standard workflow it would probably best to start with documentation as you work. I mean documentation beyond just commenting some lines. Proper documentation with doc strings for all functions and classes and proper explanation of each of the function arguments and returns.
+In a standard workflow it would probably best to start with documentation as you work. I mean documentation beyond just commenting some lines! Proper documentation with doc strings for all functions and classes and proper explanation of each of the function arguments and returns.
 
 A useful package for the aid of Python documentation and distribution is the *Sphinx* package (`pip install sphinx`). This package can allow you to create a `docs` directory in the root of your project folder which contains the tools to create pdfs, html and LaTeX documents which you can use to share your code.
 
