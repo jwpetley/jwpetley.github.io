@@ -102,15 +102,13 @@ class DownloadHandler:
     '''Control acces to SDSS spectra
     '''
     def __init__(self, download_method, no_of_connections,
-                    batch_size, download_folder):
-    
+                    batch_size, download_folder): 
         if download_method != "aria2" and download_method != "wget":
             raise Exception("Valid Download Method is either 'wget' or 'aria2'")
         self.download_method = download_method
         self.no_of_connections = no_of_connections
         self.batch_size = batch_size
         self.download_folder = os.path.abspath(download_folder)
-
     def download_spectra(self, download_file):
         '''Download spectra from a file.
     '''
@@ -118,13 +116,12 @@ class DownloadHandler:
             call(['aria2c', '-c', '--check-certificate=false',
             '-j', str(self.no_of_connections), '-i', download_file],
              cwd = self.download_folder)
-
-        if self.download_method == "wget":
+	if self.download_method == "wget":
             call(['wget', '--no-check-certificate', '-c',
             '-i', download_file],
             cwd = self.download_folder)
 
-{& endhighlight %}
+{% endhighlight %}
 
 This example contains only minimal docstrings (small string segments that explain the purpose of a function), and we will return to this issue later.
 
