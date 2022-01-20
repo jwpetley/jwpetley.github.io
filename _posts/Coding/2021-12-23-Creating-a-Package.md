@@ -32,12 +32,12 @@ I think in an ideal world one would start with the packaging and documentation p
 
 It's always best to start by creating some sort of version control process and for this project I am using `git` with [github.com](github.com) as a host. It's a simple start:
 
-{% highlight bash %}
+```
 mkdir CoSpecPy
 cd CoSpecPy
 git init
 touch README.md
-{% endhighlight %}
+```
 
 I then spent a little time creating the README and treating it as a bit of a to do/wish list. I wanted to be very clear about what I wanted to create and offer.
 
@@ -49,30 +49,30 @@ Once you have created/changed code to a state you are happy with you can **"stag
 
 To stage a particular file such as the `README.md` you can use the filename:
 
-{% highlight bash %}
+```
 git add README.md
-{% endhighlight %}
+```
 
 but in general you will find that most people will want to just stage all current files that contain changes. This can be done by
 
-{% highlight bash %}
+```
 git add .
-{% endhighlight %}
+```
 
 The next step is probably to add a **remote**. This is where you can store the history of your project remotely as well as on your own computer. In this case I wanted to use github. Therefore I logged into my account and created an empty repository with the same name as my project. Some people recommend by starting the otherway round and creating the project in github followed by cloning it to your own computer but I worked this way round.
 
 To set up the remote repository you need to get the url of the project. For this one it is [https://github.com/jwpetley/CoSpecPy](https://github.com/jwpetley/CoSpecPy). Then you can add the remote like this:
 
-{% highlight bash %}
+```
 git add remote origin https://github.com/jwpetley/CoSpecPy
-{% endhighlight}
+```
 
 Finally, we can now commit all of our coding changes and send them to our remote. It is important to include a useful message for when we look back through our changes in the future.
 
-{% highlight bash %}
+```
 git commit -m "Useful message here"
 git push
-{% endhighlight %}
+```
 
 It will probably ask for your github password at that point which is now actually a **token** that you must generate and save through the developer area of your github settings.
 
@@ -145,11 +145,11 @@ A useful package for the aid of Python documentation and distribution is the *Sp
 
 Sphinx has a handy quick-start feature that will setup the necessary structure and files within whatever project you are working on. Once Sphinx is installed and your are in the root directory of you project, you can execute the following commands to initialise Sphinx documentation.
 
-{% highlight bash %}
+```
 mkdir docs
 cd docs
 sphinx quick-start
-{% endhighlight %}
+```
 
 It will then ask you a series of questions about how you want your project configured. Once finalised it will create the necessary file structure and make files for your documentation as well as a basic configuration setup and homepage! 
 
