@@ -222,12 +222,15 @@ If you now run `make html` from within the `docs` directory you should be able t
 In your `index.rst` file you can add the following code so that you can link to this output.
 
 {% highlight markdown %}
-=====================
-Full Documentation 
+
 =====================
 
+Full Documentation 
+
+=====================
 .. toctree::
 	DownoadHandler 
+
 {% endhighlight %}
 
 You can now repeat this process for all of the code that you like depending on whether you think it is relevant to make the full documentation viewable. 
