@@ -65,7 +65,7 @@ To set up the remote repository you need to get the url of the project. For this
 
 {% highlight bash %}
 git add remote origin https://github.com/jwpetley/CoSpecPy
-{% endhighlight}
+{% endhighlight %}
 
 Finally, we can now commit all of our coding changes and send them to our remote. It is important to include a useful message for when we look back through our changes in the future.
 
