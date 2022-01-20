@@ -97,11 +97,12 @@ Your directory will likely also contain a `.git` directory which is what `git` u
 I decided to start with the code I wanted to handle the downloading of spectra from the SDSS servers. I created a file `downloads.py` in which I would create all the code for download creation. To make this most aplicable to general users the best method to implement these features is in that of a Class that contains methods (functions applicable to that class). To give you an example I will demonstrate the class instantiation and some other useful functions below.
 
 {% highlight python %}
+
 class DownloadHandler:
     '''Control acces to SDSS spectra
     '''
 
-    def __init__(self, download_method, no_of_connections,
+	def __init__(self, download_method, no_of_connections,
                     batch_size, download_folder):
 
         if download_method != "aria2" and download_method != "wget":
@@ -123,6 +124,7 @@ class DownloadHandler:
             call(['wget', '--no-check-certificate', '-c',
             '-i', download_file],
             cwd = self.download_folder)
+
 {& endhighlight %}
 
 This example contains only minimal docstrings (small string segments that explain the purpose of a function), and we will return to this issue later.
@@ -217,7 +219,7 @@ Download Handler
 
 If you now run `make html` from within the `docs` directory you should be able to make something like this 
 
-![Example Sphinx Output](/_assets/img/documentation_example/png)
+![Example Sphinx Output](/assets/img/documentation_example/png)
 
 In your `index.rst` file you can add the following code so that you can link to this output.
 
