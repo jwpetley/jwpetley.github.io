@@ -96,7 +96,7 @@ Your directory will likely also contain a `.git` directory which is what `git` u
 
 I decided to start with the code I wanted to handle the downloading of spectra from the SDSS servers. I created a file `downloads.py` in which I would create all the code for download creation. To make this most aplicable to general users the best method to implement these features is in that of a Class that contains methods (functions applicable to that class). To give you an example I will demonstrate the class instantiation and some other useful functions below.
 
-{% highlight bash %}
+{% highlight python %}
 class DownloadHandler:
     '''Control acces to SDSS spectra
     '''
@@ -125,7 +125,7 @@ class DownloadHandler:
             cwd = self.download_folder)
 {& endhighlight %}
 
-This example contains only minimal docstrings (small string segments that explain the purpose of a function), and we will return to this issue later. 
+This example contains only minimal docstrings (small string segments that explain the purpose of a function), and we will return to this issue later.
 
 ### Composite Handling Code
 
@@ -133,6 +133,109 @@ The composite handling code is very similar to that of the Download Handling cod
 
 ## Submitting a Project to PyPi
 
-To submit a project on PyPi for the purposes of `pip` installation, one must have a unique project name and a valid setup for the project build within your working directory. A version needs to be rolled up into a compressed format called a distribution. With the proper `setup.py` formatting a distribution can be made simply by `python setup.py sdist`. This will save the distribution as `.tgz` files in a new `dist` directory in your root folder. 
+To submit a project on PyPi for the purposes of `pip` installation, one must have a unique project name and a valid setup for the project build within your working directory. A version needs to be rolled up into a compressed format called a distribution. With the proper `setup.py` formatting a distribution can be made simply by `python setup.py sdist`. This will save the distribution as `.tgz` files in a new `dist` directory in your root folder.
 
 The next step is to create and register an account on [pypi.org](pypi.org). This is where the package can be hosted and then distributed. To make this process simple the final upload of the package can be achieved using a package called twine. This can be installed through `pip install tine`. Once happy with your package and the distribution then simply run the command `twine upload dist/*`. It will prompt you for your PyPi username and password at this point. Head to your PyPi account to see your package, now viewable and installable to the whole world!
+
+## Documentation - Sphinx
+
+In a standard workflow it would probably best to start with documentation as you work. I mean documentation beyond just commenting some lines. Proper documentation with doc strings for all functions and classes and proper explanation of each of the function arguments and returns.
+
+A useful package for the aid of Python documentation and distribution is the *Sphinx* package (`pip install sphinx`). This package can allow you to create a `docs` directory in the root of your project folder which contains the tools to create pdfs, html and LaTeX documents which you can use to share your code.
+
+Sphinx has a handy quick-start feature that will setup the necessary structure and files within whatever project you are working on. Once Sphinx is installed and your are in the root directory of you project, you can execute the following commands to initialise Sphinx documentation.
+
+{% highlight bash %}
+mkdir docs
+cd docs
+sphinx quick-start
+{% endhighlight %}
+
+It will then ask you a series of questions about how you want your project configured. Once finalised it will create the necessary file structure and make files for your documentation as well as a basic configuration setup and homepage! 
+
+
+### Writing Documentation
+
+Sphinx uses as a default the mark-up language of **reStructured Text**. This is a similar language to markdown but with greater flexibility in the creation of code blocks and other features. It also is able to access the content of your package and create automatically generated documentation for your code if you like. Sphinx provides a helpful ReStructured Text primer on their website at [https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html).
+
+
+The approach I took was to create some introductory pages explaining the installation process and a quick start guide, while the rest of the documentation outlining all of the classes and methods would be generated automatically.
+
+Beyond the introductory pages I created a restructured text file (`.rst`) for each of my Classes. Within this file one can simply use the autodoc feature of Sphinx to create documentation.
+
+
+### Napoleon
+
+Since I am very familiar with `numpy` and `scipy` documentation I thought it would be best to emulate the examples found within those packages within my own. These packages use a doc string style that requires a particular syntax. The syntax is as follows: 
+
+{% highlight python %}
+Class MyClass:
+	'''Class Name 
+
+	Brief description of Class. Purpose and features 
+
+	Attributes:
+		arg1 (type): Description of arg1
+		arg2 (type): Description of arg2 
+		etc.
+	'''
+
+
+def init():
+	'''Function Title 
+
+	Brief description of function. Purpose and explanation 
+
+	Args:
+		arg1 (type): Description of argument
+		arg2 (type): Description of argument
+		etc.
+
+	Returns:
+		return1 (type): Description of return 
+		return2 (type): Description of return 
+	
+	'''
+	....
+	....
+	....
+{% endhighlight %}
+
+This is style of documentation is the **Napoleon** style. To enable Sphinx to understand this style you must specify it within the Sphinx `conf.py` file. This is located within `/docs/source/conf.py` if you have set up your project in the same way as I have described so far.
+
+Within the `conf.py` file there should be an empty list entitled `extensions = []`. Within this add the two in-built extensions - `extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon']`. 
+
+With all these pieces in place you can now create automatic documentation for all of your code with just a few lines. To describe all the features of my download handler I create a file `/docs/source/DownoadHandler.rst`. Within this file I add a title and two lines of code 
+
+{% highlight markdown %}
+Download Handler 
+=================
+
+.. automodule:: CoSpecPy.download
+	:members:
+{% endhighlight %}
+
+If you now run `make html` from within the `docs` directory you should be able to make something like this 
+
+![Example Sphinx Output](/_assets/img/documentation_example/png)
+
+In your `index.rst` file you can add the following code so that you can link to this output.
+
+{% highlight markdown %}
+=====================
+Full Documentation 
+=====================
+
+.. toctree::
+	DownoadHandler 
+{% endhighlight %}
+
+You can now repeat this process for all of the code that you like depending on whether you think it is relevant to make the full documentation viewable. 
+
+The final process for me was to connect this all to [https://readthedocs.org/](https://readthedocs.org/). This website allows you to upload you code and it will create a publicly available documentation website for yu and automatically update it whenever you code is updated on your linked GithHub repository! There are many great tutorials out there for this with a little bit of googling. 
+
+## Thanks 
+
+Thanks for taking the time to look through this small tutorial on Python package creation. If you have any extra questions feel free to get in touch with me on GitHub or Twitter.
+
+
