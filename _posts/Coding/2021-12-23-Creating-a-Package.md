@@ -101,10 +101,9 @@ I decided to start with the code I wanted to handle the downloading of spectra f
 class DownloadHandler:
     '''Control acces to SDSS spectra
     '''
-
-	def __init__(self, download_method, no_of_connections,
+    def __init__(self, download_method, no_of_connections,
                     batch_size, download_folder):
-
+    
         if download_method != "aria2" and download_method != "wget":
             raise Exception("Valid Download Method is either 'wget' or 'aria2'")
         self.download_method = download_method
@@ -114,11 +113,11 @@ class DownloadHandler:
 
     def download_spectra(self, download_file):
         '''Download spectra from a file.
-        '''
+    '''
         if self.download_method == "aria2":
             call(['aria2c', '-c', '--check-certificate=false',
             '-j', str(self.no_of_connections), '-i', download_file],
-            cwd = self.download_folder)
+             cwd = self.download_folder)
 
         if self.download_method == "wget":
             call(['wget', '--no-check-certificate', '-c',
@@ -172,35 +171,34 @@ Since I am very familiar with `numpy` and `scipy` documentation I thought it wou
 
 {% highlight python %}
 Class MyClass:
-	'''Class Name 
+        '''Class Name 
 
-	Brief description of Class. Purpose and features 
+         Brief description of Class. Purpose and features 
 
-	Attributes:
-		arg1 (type): Description of arg1
-		arg2 (type): Description of arg2 
-		etc.
-	'''
+        Attributes:
+             arg1 (type): Description of arg1
+             arg2 (type): Description of arg2 
+            etc.
+        '''
 
 
-def init():
-	'''Function Title 
+    def init():
+        '''Function Title 
 
-	Brief description of function. Purpose and explanation 
+         Brief description of function. Purpose and explanation 
 
-	Args:
-		arg1 (type): Description of argument
-		arg2 (type): Description of argument
-		etc.
+         Args:
+            arg1 (type): Description of argument
+            arg2 (type): Description of argument
+            etc.
 
-	Returns:
-		return1 (type): Description of return 
-		return2 (type): Description of return 
+         Returns:
+            return1 (type): Description of return 
+            return2 (type): Description of return 
 	
-	'''
-	....
-	....
-	....
+        '''
+    def all_the_rest_of_code():
+        code = "etc...."
 {% endhighlight %}
 
 This is style of documentation is the **Napoleon** style. To enable Sphinx to understand this style you must specify it within the Sphinx `conf.py` file. This is located within `/docs/source/conf.py` if you have set up your project in the same way as I have described so far.
