@@ -207,13 +207,13 @@ Within the `conf.py` file there should be an empty list entitled `extensions = [
 
 With all these pieces in place you can now create automatic documentation for all of your code with just a few lines. To describe all the features of my download handler I create a file `/docs/source/DownoadHandler.rst`. Within this file I add a title and two lines of code 
 
-{% highlight markdown %}
+```
 Download Handler 
 =================
 
 .. automodule:: CoSpecPy.download
 	:members:
-{% endhighlight %}
+```
 
 If you now run `make html` from within the `docs` directory you should be able to make something like this 
 
