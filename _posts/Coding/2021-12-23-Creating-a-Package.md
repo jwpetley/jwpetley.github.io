@@ -217,7 +217,7 @@ Download Handler
 
 If you now run `make html` from within the `docs` directory you should be able to make something like this 
 
-![Example Sphinx Output](/assets/img/documentation_example/png)
+![Example Sphinx Output](/assets/img/documentation_example.png)
 
 In your `index.rst` file you can add the following code so that you can link to this output.
 
