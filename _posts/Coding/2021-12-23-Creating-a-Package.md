@@ -161,7 +161,7 @@ Sphinx uses as a default the mark-up language of **reStructured Text**. This is 
 
 The approach I took was to create some introductory pages explaining the installation process and a quick start guide, while the rest of the documentation outlining all of the classes and methods would be generated automatically.
 
-Beyond the introductory pages I created a restructured text file (`.rst`) for each of my Classes. Within this file one can simply use the autodoc feature of Sphinx to create documentation.
+Beyond the introductory pages I created a restructured text file (`.rst`) for each of my Classes. Within this file one can simply use the autodoc feature of Sphinx to create documentation (explanation and example below).
 
 
 ### Napoleon
