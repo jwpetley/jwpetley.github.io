@@ -32,12 +32,12 @@ I think in an ideal world one would start with the packaging and documentation p
 
 It's always best to start by creating some sort of version control process and for this project I am using `git` with [github.com](github.com) as a host. It's a simple start:
 
-{% highlight bash %}
+```
 mkdir CoSpecPy
 cd CoSpecPy
 git init
 touch README.md
-{% endhighlight %}
+```
 
 I then spent a little time creating the README and treating it as a bit of a to do/wish list. I wanted to be very clear about what I wanted to create and offer.
 
@@ -49,30 +49,30 @@ Once you have created/changed code to a state you are happy with you can **"stag
 
 To stage a particular file such as the `README.md` you can use the filename:
 
-{% highlight bash %}
+```
 git add README.md
-{% endhighlight %}
+```
 
 but in general you will find that most people will want to just stage all current files that contain changes. This can be done by
 
-{% highlight bash %}
+```
 git add .
-{% endhighlight %}
+```
 
 The next step is probably to add a **remote**. This is where you can store the history of your project remotely as well as on your own computer. In this case I wanted to use github. Therefore I logged into my account and created an empty repository with the same name as my project. Some people recommend by starting the otherway round and creating the project in github followed by cloning it to your own computer but I worked this way round.
 
 To set up the remote repository you need to get the url of the project. For this one it is [https://github.com/jwpetley/CoSpecPy](https://github.com/jwpetley/CoSpecPy). Then you can add the remote like this:
 
-{% highlight bash %}
+```
 git add remote origin https://github.com/jwpetley/CoSpecPy
-{% endhighlight}
+```
 
 Finally, we can now commit all of our coding changes and send them to our remote. It is important to include a useful message for when we look back through our changes in the future.
 
-{% highlight bash %}
+```
 git commit -m "Useful message here"
 git push
-{% endhighlight %}
+```
 
 It will probably ask for your github password at that point which is now actually a **token** that you must generate and save through the developer area of your github settings.
 
@@ -97,32 +97,33 @@ Your directory will likely also contain a `.git` directory which is what `git` u
 I decided to start with the code I wanted to handle the downloading of spectra from the SDSS servers. I created a file `downloads.py` in which I would create all the code for download creation. To make this most aplicable to general users the best method to implement these features is in that of a Class that contains methods (functions applicable to that class). To give you an example I will demonstrate the class instantiation and some other useful functions below.
 
 {% highlight python %}
+
 class DownloadHandler:
     '''Control acces to SDSS spectra
     '''
-
     def __init__(self, download_method, no_of_connections,
-                    batch_size, download_folder):
-
+                    batch_size, download_folder): 
         if download_method != "aria2" and download_method != "wget":
             raise Exception("Valid Download Method is either 'wget' or 'aria2'")
         self.download_method = download_method
         self.no_of_connections = no_of_connections
         self.batch_size = batch_size
         self.download_folder = os.path.abspath(download_folder)
-
     def download_spectra(self, download_file):
         '''Download spectra from a file.
-        '''
+    '''
         if self.download_method == "aria2":
             call(['aria2c', '-c', '--check-certificate=false',
             '-j', str(self.no_of_connections), '-i', download_file],
-            cwd = self.download_folder)
-
-        if self.download_method == "wget":
+             cwd = self.download_folder)
+	if self.download_method == "wget":
             call(['wget', '--no-check-certificate', '-c',
             '-i', download_file],
             cwd = self.download_folder)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 185c7e9382f757586692a2bfc893e14d589d0c01
 {% endhighlight %}
 
 This example contains only minimal docstrings (small string segments that explain the purpose of a function), and we will return to this issue later.
@@ -145,11 +146,11 @@ A useful package for the aid of Python documentation and distribution is the *Sp
 
 Sphinx has a handy quick-start feature that will setup the necessary structure and files within whatever project you are working on. Once Sphinx is installed and your are in the root directory of you project, you can execute the following commands to initialise Sphinx documentation.
 
-{% highlight bash %}
+```
 mkdir docs
 cd docs
 sphinx quick-start
-{% endhighlight %}
+```
 
 It will then ask you a series of questions about how you want your project configured. Once finalised it will create the necessary file structure and make files for your documentation as well as a basic configuration setup and homepage! 
 
@@ -170,35 +171,34 @@ Since I am very familiar with `numpy` and `scipy` documentation I thought it wou
 
 {% highlight python %}
 Class MyClass:
-	'''Class Name 
+        '''Class Name 
 
-	Brief description of Class. Purpose and features 
+         Brief description of Class. Purpose and features 
 
-	Attributes:
-		arg1 (type): Description of arg1
-		arg2 (type): Description of arg2 
-		etc.
-	'''
+        Attributes:
+             arg1 (type): Description of arg1
+             arg2 (type): Description of arg2 
+            etc.
+        '''
 
 
-def init():
-	'''Function Title 
+    def init():
+        '''Function Title 
 
-	Brief description of function. Purpose and explanation 
+         Brief description of function. Purpose and explanation 
 
-	Args:
-		arg1 (type): Description of argument
-		arg2 (type): Description of argument
-		etc.
+         Args:
+            arg1 (type): Description of argument
+            arg2 (type): Description of argument
+            etc.
 
-	Returns:
-		return1 (type): Description of return 
-		return2 (type): Description of return 
+         Returns:
+            return1 (type): Description of return 
+            return2 (type): Description of return 
 	
-	'''
-	....
-	....
-	....
+        '''
+    def all_the_rest_of_code():
+        code = "etc...."
 {% endhighlight %}
 
 This is style of documentation is the **Napoleon** style. To enable Sphinx to understand this style you must specify it within the Sphinx `conf.py` file. This is located within `/docs/source/conf.py` if you have set up your project in the same way as I have described so far.
@@ -207,13 +207,13 @@ Within the `conf.py` file there should be an empty list entitled `extensions = [
 
 With all these pieces in place you can now create automatic documentation for all of your code with just a few lines. To describe all the features of my download handler I create a file `/docs/source/DownoadHandler.rst`. Within this file I add a title and two lines of code 
 
-{% highlight markdown %}
+```
 Download Handler 
 =================
 
 .. automodule:: CoSpecPy.download
 	:members:
-{% endhighlight %}
+```
 
 If you now run `make html` from within the `docs` directory you should be able to make something like this 
 
@@ -221,14 +221,13 @@ If you now run `make html` from within the `docs` directory you should be able t
 
 In your `index.rst` file you can add the following code so that you can link to this output.
 
-{% highlight markdown %}
+```
 =====================
 Full Documentation 
 =====================
-
 .. toctree::
-	DownoadHandler 
-{% endhighlight %}
+	DownloadHandler 
+```
 
 You can now repeat this process for all of the code that you like depending on whether you think it is relevant to make the full documentation viewable. 
 
