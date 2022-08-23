@@ -1,7 +1,7 @@
 # Site settings
 title: James Petley
 description: >
-  A simple, minimal Jekyll theme for a personal web page and blog, focusing on white space and readability
+  My personal website for updates on my life and research!
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://jwpetley.github.io" # the base hostname & protocol for your site
@@ -11,6 +11,7 @@ author:
   github: jwpetley
   linkedin: james-petley-4582ab129
   email: jwpetley@gmail.com
+  twitter: astro_petley
 
 
 # Syntax highlighting
