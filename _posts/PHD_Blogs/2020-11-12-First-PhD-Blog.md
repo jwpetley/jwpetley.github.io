@@ -68,7 +68,7 @@ The above image indicates how this broadenning, known as Doppler broadenning, ca
 
 Moving from ***broad emission lines*** to ***broad absorption lines*** is the next step to understanding the BAL appearance. When we observe the spectra of Broad Absorption Line Quasars, with an instrument such as SDSS, we see broad absorption features, next to the broad emission feature for a particular atom, but we find that this absorption is shifted to be at lower wavelengths than the emission line.
 
-![SDSS Telescope](/assets/img/sdss-telescope.jpg.crdownload){:class="img-responsive"}
+![SDSS Telescope](/assets/img/sdss_telescope.jpg){:class="img-responsive"}
 
 
 A shift to lower-wavelengths is known as a blue shift, since the blue end of the spectrum is at lower wavelengths, and is another example of ***Doppler shifting***.
