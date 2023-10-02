@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Academic CV
-subtitle: Updated 6/11/20
+subtitle: Updated 02/10/23
 ---
 
 <span style="float: right; "><a href="{{ '/assets/Academic_CV.pdf' | prepend: site.baseurl }}"><strong>> Download Academic CV in Full as PDF</strong></a> </span>
