@@ -12,7 +12,7 @@
     text-decoration: none; }
 
   p, ul, ol, dl {
-    font-size: 100%;
+    font-size: 150%;
     line-height: 32px; }
 
   img {
@@ -80,7 +80,7 @@
 
   .social-links {
     float: right;
-    font-size: 150%;
+    font-size: 200%;
     color: #828282;
     list-style-type: none; }
 
