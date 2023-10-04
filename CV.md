@@ -4,33 +4,30 @@ title: Academic CV
 subtitle: Updated 02/10/23
 ---
 
-<span style="float: right; "><a href="{{ '/assets/Academic_CV.pdf' | prepend: site.baseurl }}"><strong>> Download Academic CV in Full as PDF</strong></a> </span>
+<span style="float: centre; "><a href="{{ '/assets/Academic_CV.pdf' | prepend: site.baseurl }}" target= "_blank" > <strong> Download Academic CV in Full as PDF</strong></a> </span>
 <br>
 
-### SKILLS
-``` Experience in handling large datasets both in the statistical analysis of large catalogues and in processing radio inteferometry data. I am proficient in using Python for data science and am confident in my statistical knowledge and ability to present data in a clear and intuitive fashion. ```  
+# SKILLS
+``` Experience in handling large datasets both in the statistical analysis of large catalogues and in processing radio inteferometry data. I am proficient in using Python for data science and am confident in my statistical knowledge and ability to present data in a clear and intuitive fashion.```  
 
-### PROJECTS
-**Radio Differences of Broad Absorption Line Quasars** - LOFAR DR2 - Durham University <span style="float: right; ">2020-Present</span>  
+# PROJECTS
+**Radio Differences of Broad Absorption Line Quasars** - Durham University - _2020-Present_
+
 What drives the radio differences between sources with very similar properties across the rest of the spectrum? Broad Absorption Line Quasars show fast moving outflows that are thought to be a prime mode of AGN feedback which can modify the behaviour of a galaxy hosting a supermassive blackhole. However, the two main varieties of BALs show significantly different radio properties that are yet to be explained. Using international LOFAR data I will place these sources more accurately both in an evolutionary timeline and in a cohesive model that can explain them.
 
 
 
-### EDUCATION
+# EDUCATION
 
 Durham University <span style="float: right; ">2020-Present</span>  
 **PhD in Astronomy**  
-I am undertaking a PhD in astronomy under the supervision of Dr Leah Morabito. I am building on her 2019 work on BALQSOs ([See Here](https://ui.adsabs.harvard.edu/abs/2019A%26A...622A..15M/abstract)) and am using the as yet unreleased LOFAR DR2 catalogue which provides much better depth allowing to significantly expand the number of radio detected BALs.
+I am undertaking a PhD in astronomy under the supervision of Dr Leah Morabito.
 
 Durham University <span style="float: right; ">2016-2020</span>  
 **MPhys - Physics and Astronomy - 1st Class with Honours**  
-During my time as an undergraduate I studied a large variety of subjects within Physics and Astronomy.  
 
-King Edwards VI Aston <span style="float: right; ">2009-2016</span>  
-**Course**  
-During my time in secondary school I obtained 10 GCSEs (8A<sup>*</sup>s and 2As), 6 AS Levels (5A and 1B) and 4 A Levels (Mathematics - A<sup>\*</sup>; Further Mathematics - A<sup>\*</sup>; Physics - A; Chemistry - C)
 
-### EXPERIENCE
+# EXPERIENCE
 
 Intern - **[Dronelab](https://www.dronelab.io/)** <span style="float: right; ">Summer 2019</span>  
 _I worked as an intern at Dronelab, a cloud based hosting system for drone imagery. I mainly worked on improving profile pages for premium subscription users and adding new features such as a map of image locations for users. I also experimented with computer vision and machine learning to analyse growth of different plants in moors for Durham County Council ;_  
