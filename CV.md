@@ -4,18 +4,22 @@ title: Academic CV
 subtitle: Updated 02/10/23
 ---
 
-<span style="float: centre; "><a href="{{ '/assets/Academic_CV.pdf' | prepend: site.baseurl }}" target= "_blank" > <strong> Download Academic CV in Full as PDF</strong></a> </span>
+# <span style="float: centre; "><a href="{{ '/assets/Academic_CV.pdf' | prepend: site.baseurl }}" target= "_blank" > <strong> Download Academic CV in Full as PDF </strong> <img src="/assets/img/download.png" alt="Download CSV" style="float:right;width:60px;height:60px;" >   </a> </span>
 <br>
 
+---
+
 # SKILLS
-``` Experience in handling large datasets both in the statistical analysis of large catalogues and in processing radio inteferometry data. I am proficient in using Python for data science and am confident in my statistical knowledge and ability to present data in a clear and intuitive fashion.```  
+``` Experience in handling large datasets both in the statistical analysis of large catalogues and in processing radio inteferometry data. Have helped to develop processing pipelines within a large collaboration ready to use on HPC clusters. I am proficient in using Python for data science and am confident in my statistical knowledge and ability to present data in a clear and intuitive fashion.```  
+
+---
 
 # PROJECTS
 **Radio Differences of Broad Absorption Line Quasars** - Durham University - _2020-Present_
 
 What drives the radio differences between sources with very similar properties across the rest of the spectrum? Broad Absorption Line Quasars show fast moving outflows that are thought to be a prime mode of AGN feedback which can modify the behaviour of a galaxy hosting a supermassive blackhole. However, the two main varieties of BALs show significantly different radio properties that are yet to be explained. Using international LOFAR data I will place these sources more accurately both in an evolutionary timeline and in a cohesive model that can explain them.
 
-
+---
 
 # EDUCATION
 
@@ -26,12 +30,13 @@ I am undertaking a PhD in astronomy under the supervision of Dr Leah Morabito.
 Durham University <span style="float: right; ">2016-2020</span>  
 **MPhys - Physics and Astronomy - 1st Class with Honours**  
 
+---
 
 # EXPERIENCE
 
 Intern - **[Dronelab](https://www.dronelab.io/)** <span style="float: right; ">Summer 2019</span>  
 _I worked as an intern at Dronelab, a cloud based hosting system for drone imagery. I mainly worked on improving profile pages for premium subscription users and adding new features such as a map of image locations for users. I also experimented with computer vision and machine learning to analyse growth of different plants in moors for Durham County Council ;_  
-``` Technologies used AWS, OpenCV, HTML, JS ```
+
 
 
 Tutor - **Advantage 11+** <span style="float: right; ">2015-Present</span>  
@@ -40,13 +45,12 @@ _I have been an 11+ tutor for the past few years. I deliver lessons and multiple
 Amateur Musician - **Durham** <span style="float: right; ">2016-Present</span>  
 _Music has allowed me to develop skills far outside of what is available in Physics and Astronomy. I have been a part of several bands in Durham, both playing for college and university groups and as part of a gigging band with some friends. During my time we released two albums and performed with "Too Many Zoos" (backing track to the Joe Biden presidential campaign 2020!) in Newcastle. I also organised a tour to Amsterdam with my college band and organised over 28 gigs a year earning ~£5000 requiring significant management of contracts, liability insurance and people forgetting to show up!_
 
+---
 
-
-### RECOGNITION & INTERESTS
+# RECOGNITION & INTERESTS
 
 - Baxter Prize from Hatfield College, Durham for academic achievement in 2017 and 2018
-- Prize Winner Durham Hackathon 2019 - CapitalOne - Micro Lending App
+- Prize Winner Durham Hackathon 2019&2021 - CapitalOne and Twilio - Micro Lending App and Fake News Whatsapp Bot
 - Gilbert Larwood Prize for contribution to the arts in Hatfield College, Durham
 - I am a keen Ultimate Frisbee player and have represented my club team and University in the UK and overseas
-- Budapest Marathon finisher 2018
 - Unfortunately I have struggled with Systemic Onset Juvenile Arthritis since I was 14. This is an auto-immune disease similar to Lupus or Khrohns disease. This is being well managed with medication (thank you NHS!) but I am proud of my commitment to activity even if it can hurt sometimes.
