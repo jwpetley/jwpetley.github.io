@@ -4,7 +4,7 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 100%;
     color: #012;
-    background-color: #FFF; }
+    background-color: #FFFF; }
 
   a {
     color: #57A;
@@ -45,8 +45,17 @@
     color: #16a085; }
 
   .wrapper {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 60px auto; }
+
+    .row {
+      display: flex;
+    }
+    
+    .column {
+      flex: 33.33%;
+      padding: 5px;
+    }
 
 /* =Header *//*************************************************************/
   .header {
@@ -99,8 +108,8 @@
 
   .page-title__subtitle {
     font-weight: 400;
-    font-size: 75%;
-    color: #828282; }
+    font-size: 200%;
+    color: #4ecc0e; }
 
 /* =Post teasers *//*************************************************************/
   .list-posts {
@@ -178,7 +187,7 @@
   #describe-text {
       display: block;
       text-align: center;
-      width: 100%; }
+      width: 80%; }
 
 /* =Small screen *//*************************************************************/
   @media (max-width: 500px) {

@@ -18,7 +18,7 @@ The package itself is called `CoSpecPy` and is used to make composite spectra of
 
 All of the spectra to start with would come from a survey called the Sloane Digital Sky Survey. This survey has only surveys from which we can request files for download and processing. Pretty picture of the telescope used is below:
 
-![SDSS Telescope](/assets/img/sdss-telescope.jpg.crdownload)
+![SDSS Telescope](/assets/img/sdss_telescope.jpg)
 
 I decided that it would be best to split the package into three main processes to aid this: Downloading, Composite making and Plotting. Each of these sections can feed into each other.
 
