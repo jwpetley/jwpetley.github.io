@@ -44,7 +44,7 @@ To identify quasars, in this work we used the Sloan Digital Sky Survey (SDSS). T
 
 For the radio data we use a survey named the LOFAR Two metre Sky Survey (LoTSS). LOFAR because it uses the LOFAR radio telescope and two metre because the radio wavelength it observes is two metres long. The LOFAR radio telescope has stations all around Europe and is one of the most sensitive telescopes we have, particularly at this wavelength.
 
-![LOFAR Telescope](../../assets/img/LOFAR_AutoE.jpeg)
+![LOFAR Telescope](/assets/img/LOFAR_AutoE.jpeg)
 
 ## What to do with it?
 
@@ -61,4 +61,4 @@ We want to know why the quasars with winds are more likely to be radio detected 
 
 We look at the radio detection fractions of different groups. To see if we can find a useful predictor.
 
-![Panel Fractions](../../assets/img/3_panel_fraction.png)
+![Panel Fractions](assets/img/3_panel_fraction.png)
