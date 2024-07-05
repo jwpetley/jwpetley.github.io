@@ -9,7 +9,7 @@ subtitle: Updated 02/10/23
 
 ---
 
-<embed src="https://jwpetley.github.io/assets/Academic_CV.pdf" width="800" height="400" type="application/pdf" />
+<embed src="https://jwpetley.github.io/assets/Academic_CV.pdf" height="1500" type="application/pdf" />
 
 
 ---

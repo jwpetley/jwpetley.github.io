@@ -18,10 +18,8 @@ sitemap:
   </div>
 </div>
 
-
-
-<div id="describe-text">
-	<p>I am a postdoctoral researcher studying quasars, highly luminous black hole systems, at Durham University. I am currently working at Leiden Observatory in the Netherlands. You can view my research publications here - <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Petley%2C%20J.%20W.%22&sort=first_author%20desc%2C%20bibcode%20desc" target="_blank">ADS Search</a>. </p>
+<div id="describe-text" style="margin:0 auto">
+	<p>I am a postdoctoral researcher studying quasars, highly luminous black hole systems. I also help to develop the LOFAR-VLBI pipeline which powers the highest resolution astronomical imaging at low frequencies. I am currently working at Leiden Observatory in the Netherlands. You can view my research publications here - <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Petley%2C%20J.%20W.%22&sort=first_author%20desc%2C%20bibcode%20desc" target="_blank">ADS Search</a>. </p>
 
   <p> Contact me at jwpetley(at)gmail.com or petley(at)strw.leidenuniv.nl </p>
 
