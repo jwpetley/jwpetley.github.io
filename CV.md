@@ -11,6 +11,40 @@ subtitle: Updated 02/10/23
 
 <embed src="https://jwpetley.github.io/assets/Academic_CV.pdf" type="application/pdf" />
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 # SKILLS
