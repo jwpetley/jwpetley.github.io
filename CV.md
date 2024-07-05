@@ -9,6 +9,10 @@ subtitle: Updated 02/10/23
 
 ---
 
+<embed src="https://jwpetley.github.io/assets/Academic_CV.pdf" type="application/pdf" />
+
+---
+
 # SKILLS
 ``` Experience in handling large datasets both in the statistical analysis of large catalogues and in processing radio inteferometry data. Have helped to develop processing pipelines within a large collaboration ready to use on HPC clusters. I am proficient in using Python for data science and am confident in my statistical knowledge and ability to present data in a clear and intuitive fashion.```  
 
