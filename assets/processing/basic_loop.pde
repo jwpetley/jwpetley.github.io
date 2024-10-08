@@ -58,24 +58,19 @@ void draw() {
         int(result[i][1]*1.0/samplesPerFrame) << 8 | 
         int(result[i][2]*1.0/samplesPerFrame);
     updatePixels();
-
-    saveFrame("frames/fr###.png");
-    println(frameCount,"/",numFrames);
-    if (frameCount==numFrames)
-      exit();
   }
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
-int samplesPerFrame = 4;
-int numFrames = 60;        
+int samplesPerFrame = 2;
+int numFrames = 40;        
 float shutterAngle = .8;
 
 boolean recording = true;
 
-float R = 1.2;
-float L = 160;
+float R = 1.5;
+float L = 100;
 float scl = 0.013;
 
 float radius = 200;
@@ -97,7 +92,7 @@ class Star{
     //stroke(255);
     stroke(xx/500*255, yy/500*255, 
       155);
-    strokeWeight(1);
+    strokeWeight(5);
     point(xx,yy);
   }
 }
@@ -120,7 +115,7 @@ void drawCurve(){
   endShape(CLOSE);
 }
 
-int n = 80000;
+int n = 500;
 
 Star[] array = new Star[n];
 

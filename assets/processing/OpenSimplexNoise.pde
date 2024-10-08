@@ -58,13 +58,14 @@ public class OpenSimplexNoise {
     perm = new short[256];
     permGradIndex3D = new short[256];
     short[] source = new short[256];
-    for (short i = 0; i < 256; i++)
+    for (short i = 0; i < 256; i++){
       source[i] = i;
-    seed = seed * 6364136223846793005l + 1442695040888963407l;
-    seed = seed * 6364136223846793005l + 1442695040888963407l;
-    seed = seed * 6364136223846793005l + 1442695040888963407l;
+    }
+    seed = seed * 6364136223846793005 + 1442695040888963407;
+    seed = seed * 6364136223846793005 + 1442695040888963407;
+    seed = seed * 6364136223846793005 + 1442695040888963407;
     for (int i = 255; i >= 0; i--) {
-      seed = seed * 6364136223846793005l + 1442695040888963407l;
+      seed = seed * 6364136223846793005 + 1442695040888963407;
       int r = (int)((seed + 31) % (i + 1));
       if (r < 0)
         r += (i + 1);
