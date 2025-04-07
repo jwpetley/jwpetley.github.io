@@ -23,7 +23,7 @@ sitemap:
 
   <p> Contact me at jwpetley(at)gmail.com or petley(at)strw.leidenuniv.nl </p>
 
-<p>I have several blogs on this website based on my PhD research and small programming projects. Please get in contact for any project ideas, job enquiries or just to have a chat about black holes or programming.</p>
+<p>I have several blogs on this website based on my PhD research and small programming projects. Please get in contact for any project ideas, job enquiries or just to have a chat about black holes or programming. I have begun working extensively on Euclid telescope data as well.</p>
 
 <h1>Latest Blog Post</h1>
 {% for post in site.posts limit:1 %}
